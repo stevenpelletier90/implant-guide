@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import SurgeryForm from './components/SurgeryForm';
+import SurgeryRecommendation from './components/SurgeryRecommendation';
 import './App.css';
 
 function App() {
+  const [formData, setFormData] = useState(null);
+
+  const handleSubmit = (data) => {
+    setFormData(data);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <main className="container mt-5">
+        <SurgeryForm onSubmit={handleSubmit} />
+        {formData && <SurgeryRecommendation {...formData} />}
+      </main>
+      <Footer />
     </div>
   );
 }
