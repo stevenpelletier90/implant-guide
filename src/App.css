@@ -1,7 +1,9 @@
 body {
-  font-family: 'Montserrat', 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #1b1b1b;
-  color: #C8B273;
+  color: #c8b273;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -10,50 +12,110 @@ body {
   padding: 2rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #C8B273;
-  margin-bottom: 1rem;
+.card {
+  background-color: #333;
+  color: #c8b273;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #c8b273;
+  font-size: 1.8rem;
+}
+
+.form-check-input:checked {
+  background-color: #c8b273;
+  border-color: #c8b273;
+}
+
+.btn-primary {
+  background-color: #c8b273;
+  border-color: #c8b273;
+}
+
+.btn-primary:hover {
+  background-color: #bba157;
+  border-color: #bba157;
+}
+
+.recommendation {
+  background-color: #444;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.navbar-dark .navbar-brand {
+  color: #c8b273;
+  font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-brand:hover {
+  color: #bba157;
+}
+
+.navbar-dark .navbar-text {
+  color: #c8b273;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-text {
+  color: #c8b273;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  flex: 1;
 }
 
 .form-group {
   margin-bottom: 1.5rem;
 }
 
-.form-check-label {
-  margin-left: 0.5rem;
-  color: #C8B273;
+.form-label {
+  font-size: 1.2rem;
+  color: #ffffff;
 }
 
-.btn-primary {
-  background-color: #C8B273;
-  border-color: #C8B273;
-}
-
-.btn-primary:hover {
-  background-color: #a89250;
-  border-color: #a89250;
-}
-
-.recommendation {
-  background-color: #333;
-  padding: 2rem;
-  margin-top: 2rem;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.recommendation h2 {
-  font-size: 1.5rem;
+.form-check {
   margin-bottom: 1rem;
-  color: #C8B273;
 }
 
-.recommendation p {
-  margin-bottom: 0;
-  color: #C8B273;
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  .form-label {
+    font-size: 1rem;
+  }
+
+  .navbar-dark .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
 }
