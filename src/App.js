@@ -16,8 +16,11 @@ function App() {
     <div className="App">
       <Header />
       <main className="container mt-5">
-        <SurgeryForm onSubmit={handleSubmit} />
-        {formData && <SurgeryRecommendation {...formData} />}
+        {!formData ? (
+          <SurgeryForm onSubmit={handleSubmit} />
+        ) : (
+          <SurgeryRecommendation formData={formData} />
+        )}
       </main>
       <Footer />
     </div>

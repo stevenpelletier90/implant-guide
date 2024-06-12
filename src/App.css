@@ -1,7 +1,7 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+  background-color: #1b1b1b;
+  color: #C8B273;
 }
 
 .container {
@@ -16,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #007bff;
+  color: #C8B273;
   margin-bottom: 1rem;
 }
 
@@ -26,20 +26,21 @@ h6 {
 
 .form-check-label {
   margin-left: 0.5rem;
+  color: #C8B273;
 }
 
 .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #C8B273;
+  border-color: #C8B273;
 }
 
 .btn-primary:hover {
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: #a89250;
+  border-color: #a89250;
 }
 
 .recommendation {
-  background-color: #fff;
+  background-color: #333;
   padding: 2rem;
   margin-top: 2rem;
   border-radius: 4px;
@@ -49,8 +50,10 @@ h6 {
 .recommendation h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  color: #C8B273;
 }
 
 .recommendation p {
   margin-bottom: 0;
+  color: #C8B273;
 }
